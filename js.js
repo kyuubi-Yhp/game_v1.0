@@ -13,11 +13,19 @@ function ownOrtwo() {
 const choise2 = Number(prompt('теперь приступим к первуму заданию куда отправимся на пустошь или в пищеру', 'выбери 1 или 2'))
 if (choise2 === 1) {
   const damm = confirm('вы встречаете монстра большой паук, атаковать или бежать?')
-if (damm == true & inventory == 'Black Sword') {
+// if (damm == true & inventory == 'Black Sword') 
+if (damm == true & inventory.includes('Black Sword')) {
   alert('вы убили паука мечем, победа!')
 } else {
   alert('вы погибли против пауков лучше использовать меч')
 }
+} else if (choise2 === 2) {
+  const damm2 = confirm('вы встречаете стального слизня, атаковать или бежать?')
+  if (damm2 == true & skills.includes('Bane')) {
+    alert('яд проник внутрь и разбил днк слизня, вы победили!')
+  } else {
+    alert('против слизней хорошо работают яды, но а мечи бесполезны, вы убиты')
+  }
 }
 }
 // функция меч или яд
@@ -29,7 +37,7 @@ if (sumWallet() === 100) {
   console.log(inventory)
 } else if (lvl === 20) {
   alert('вы получили очки опыта и достигли 1 уровня у вас есть 1 жетион НРС предлагаю вкачать способность отравление')
-  skills.push('bane')
+  skills.push('Bane')
 }
 }
 // функция развилка выбора 
