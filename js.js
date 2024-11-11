@@ -13,7 +13,7 @@ function ownOrtwo() {
 const choise2 = Number(prompt('теперь приступим к первуму заданию куда отправимся на пустошь или в пищеру', 'выбери 1 или 2'))
 if (choise2 === 1) {
   const damm = confirm('вы встречаете монстра большой паук, атаковать или бежать?')
-if (damm == true & inventory == 'black Sword' ) {
+if (damm == true & inventory == 'Black Sword') {
   alert('вы убили паука мечем, победа!')
 } else {
   alert('вы погибли против пауков лучше использовать меч')
